@@ -1,0 +1,182 @@
+@import "base.less";
+/*-----------关于------------------------------------------------------------------------------------------------------*/
+
+.about_ul {
+  width: auto;
+  height: 35px;
+  font-size: 16px;
+  border-bottom: 1px solid @greyBorder;
+  margin: 10px auto 0px;
+  li {
+    float: left;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+    &.tab {
+      border-bottom: 2px solid @color;
+      color: @color;
+      a {
+        color: @color;
+      }
+    }
+  }
+  &.fixed_top {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.detail_content {
+  padding-top: 55px;
+  display: none;
+}
+
+.about_p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.about2_dl {
+  width: 100%;
+  dt,
+  dd {
+    line-height: 45px;
+    font-size: 16px;
+  }
+  dt {
+    width: 95px;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+  }
+  dd {
+    width: 200px;
+    float: left;
+  }
+}
+
+.about_money {
+  width: 120px;
+  float: left;
+  border-right: 1px solid @greyBorder;
+  li {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    i {
+      font-style: normal;
+    }
+    &.tab {
+      border: 1px solid @greyBorder;
+      border-right: 1px solid white;
+      color: @color;
+      i {
+        color: @orange;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.about_money_r {
+  width: 200px;
+  float: left;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  p {
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: @color;
+    position: relative;
+    left: 200px;
+    top: 75px;
+  }
+  img.ewm {
+    width: 200px;
+    height: 200px;
+    display: none;
+    position: relative;
+    top: -70px;
+  }
+}
+
+.about_p p {
+  text-indent: 2rem;
+  margin: 10px 0;
+}
+
+/*-----------致谢------------------------*/
+
+.thank_outerleft {
+  border-left: 2px solid @greyBorder;
+  position: relative;
+  float: left;
+}
+
+.thank_outerleft span.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: @greyBorder;
+  position: absolute;
+  left: -5px;
+  top: 20px;
+}
+
+.thank_outerleft span.circle.bg_add {
+  background: @color;
+}
+
+dl.thank_left {
+  width: 97%;
+  margin: 5px 5px;
+  padding: 5px;
+  background: none;
+  border-radius: 6px;
+}
+
+dl.thank_left:after {
+  content: "";
+  clear: both;
+}
+
+dl.thank_left dd {
+  width: 100%;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+dl.thank_left dd.dd_title {
+  font-style: weight;
+  font-size: 16px;
+  line-height: 28px;
+  width: 100%;
+  height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+dl.thank_left dd.dd_title span.orgnge {
+  padding-left: 10px;
+  color: @orange;
+}
+
+.thank_right {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: @color;
+  border-radius: 0 25px;
+  color: white;
+  margin: 10px 20px 0 30px;
+  float: left;
+}

@@ -1,0 +1,10 @@
+<% if (site.tags.length){ %>
+  <div class="right_menu">
+    <p class="right_menu_t orgnge"><%= __('tags') %></p>
+    <ul class="right_menu_b band_ul">
+      <%- list_tags({show_count: theme.show_count}) %>
+            
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+<% } %>

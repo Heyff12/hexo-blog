@@ -1,0 +1,15 @@
+<% if (site.posts.length){ %>
+  <div class="right_menu">
+    <p class="right_menu_t orgnge"><%= __('recent_posts') %></p>
+    <ul class="right_menu_b file_ul">
+      <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+        <li>
+          <a href="<%- url_for(post.path) %>">
+            <%= post.title || '(no title)' %>
+          </a>
+        </li>
+        <% }) %>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+<% } %>

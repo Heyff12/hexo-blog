@@ -1,0 +1,152 @@
+@import "base.less";
+/*-----------右边-------------------------------------------------------------------------*/
+
+.side_right {
+  padding-left: 50px;
+  position: relative;
+}
+
+.right_menu {
+  width: 100%;
+}
+
+.right_menu_t {
+  font-size: 17.5px;
+  line-height: 24px;
+  margin: 13px 0;
+  border-left: 2px solid @color;
+  padding-left: 10px;
+}
+
+.right_menu_b {
+  width: 100%;
+}
+
+.band_ul {
+  li {
+    float: left;
+    width: auto;
+    margin: 5px 15px 5px 0;
+    a {
+      display: block;
+      border: 1px dashed @greyBorder;
+      padding: 5px;
+      transition: All 0.3s;
+      &:hover {
+        color: white;
+        background: @color;
+        border: 1px dashed @color;
+      }
+    }
+  }
+  a {
+    float: left;
+    width: auto;
+    margin: 5px 8px 5px 0;
+    display: block;
+    border: 1px dashed @greyBorder;
+    padding: 5px;
+    transition: All 0.3s;
+    font-size: 14px;
+    &:nth-child(4n + 0) {
+      color: @orange;
+    }
+    &:nth-child(4n + 1) {
+      color: @purple;
+    }
+    &:nth-child(4n + 2) {
+      color: @red;
+    }
+    &:nth-child(4n + 3) {
+      color: @blue;
+    }
+    &:hover {
+      color: white;
+      background: @color;
+      border: 1px dashed @color;
+    }
+  }
+}
+
+.file_ul li {
+  border-bottom: 1px dashed @greyBorder;
+  line-height: 40px;
+  height: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.ul_about img {
+  width: 55%;
+  height: auto;
+}
+
+.class_ul li {
+  width: 48%;
+  float: left;
+  margin: 6px 1%;
+  border: 1px dashed @greyBorder;
+  text-align: center;
+  height: 35px;
+  line-height: 18px;
+  transition: all 1s;
+  position: relative;
+  text-align: right;
+  font-size: 12px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  color: #a5a5a5;
+}
+
+.class_ul li:hover {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  border: 1px solid @greyBorder;
+}
+
+.class_ul li a {
+  display: block;
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+}
+
+.class_ul li:nth-child(4n + 1) a:hover {
+  color: white;
+  background: @orange;
+}
+
+.class_ul li:nth-child(4n + 2) a:hover {
+  color: white;
+  background: @color;
+}
+
+.class_ul li:nth-child(4n + 3) a:hover {
+  color: white;
+  background: @blue;
+}
+
+.class_ul li:nth-child(4n) a:hover {
+  color: white;
+  background: @red;
+}
+
+.right_menu.fixed_top {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: auto;
+}
+
+.right_menu.fixed_top1 {
+  position: fixed;
+  top: 150px;
+  z-index: 9999;
+  width: auto;
+}

@@ -1,0 +1,11 @@
+<% if (site.tags.length){ %>
+  <div class="right_menu">
+    <p class="right_menu_t orgnge">
+      <%= __('tagcloud') %>
+    </p>
+    <ul class="right_menu_b band_ul">
+      <%- tagcloud() %>  
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+<% } %>

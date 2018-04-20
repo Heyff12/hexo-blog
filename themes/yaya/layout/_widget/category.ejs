@@ -1,0 +1,23 @@
+<% if (site.categories.length){ %>
+  <div class="right_menu js_class_menu">
+    <p class="right_menu_t orgnge"><%= __('categories') %></p>
+    <ul class="right_menu_b class_ul">
+      <%- list_categories({show_count: theme.show_count}) %>
+      <!-- <li>
+        <a href="#">前端技术</a>
+      </li>
+      <li>
+        <a href="#">网页赏析</a>
+      </li>
+      <li>
+        <a href="#">运营推广</a>
+      </li>
+      <li>
+        <a href="#">免费建站</a>
+      </li> -->
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+<% } %>
+
+

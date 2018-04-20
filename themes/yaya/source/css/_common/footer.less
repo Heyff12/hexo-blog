@@ -1,0 +1,95 @@
+@import "base.less";
+/*-----------底部------------------------------------------------------------------------------------------------------*/
+
+footer {
+  width: 100;
+  position: relative;
+  z-index: 1;
+}
+
+.detail_footer_ul {
+  float: right;
+  margin-top: 17.5px;
+  li {
+    float: left;
+    margin-right: 20px;
+    line-height: 35px;
+  }
+}
+
+.detail_footer_ewm {
+  float: right;
+  margin-right: 20px;
+  margin-top: 17.5px;
+  li {
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background: @grey;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 15px;
+    position: relative;
+    transition: All 0.3s;
+    &:hover {
+      background: @color;
+    }
+    img {
+      &.ewm_small {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+      }
+      &.ewm_img {
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        top: -130px;
+        left: -45px;
+        background: white;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.footer_word {
+  width: 100%;
+  text-align: left;
+  color: #999;
+  background: #232323;
+  line-height: 30px;
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.footer_l {
+  float: left;
+  width: 70%;
+  ul {
+    margin-left: 15px;
+    li {
+      float: left;
+      padding-right: 15px;
+      a {
+        color: #999;
+        &:hover {
+          color: @color;
+        }
+      }
+      &.font_lic {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.footer_word span {
+  padding: 0 15px;
+  a {
+    color: #999;
+  }
+}

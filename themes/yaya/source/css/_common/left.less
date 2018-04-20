@@ -1,0 +1,114 @@
+@import "base.less";
+/*-----------左边-------------------------------------------------------------------------*/
+
+.side_main {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.title_band {
+  margin: 0;
+  p a {
+    color: @color;
+    font-size: 20px;
+  }
+  footer {
+    span {
+      padding: 0 10px;
+      i {
+        font-style: normal;
+        color: @color;
+      }
+    }
+  }
+}
+
+.title_band_detail {
+  text-indent: 2rem;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+dl.title_word {
+  width: 100%;
+  margin: 20px 0;
+  border-bottom: 1px dashed @greyBorder;
+  padding: 0 0 20px;
+  &:after {
+    content: "";
+    clear: both;
+  }
+  dt {
+    width: 25%;
+    float: left;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    max-height: 140px;
+    img {
+      width: 100%;
+      height: auto;
+      transition: All 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+      }
+    }
+  }
+  dd {
+    width: 73%;
+    float: right;
+    line-height: 22px;
+    overflow: hidden;
+    &.dd_title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      width: 73%;
+      height: 28px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      a {
+        color: @color;
+      }
+    }
+    &.dd_date {
+      font-size: 12px;
+      line-height: 26px;
+      a {
+        color: @color;
+      }
+      span {
+        padding: 0 10px;
+        i {
+          font-style: normal; 
+        }
+      }
+    }
+    &.dd_detail {
+      display: block;
+    }
+  }
+}
+
+
+.pagination > li > a {
+  color: @wordColor;
+}
+
+.pagination > li > a:hover {
+  color: @color;
+}
+
+.scan_dl_more {
+  width: 100%;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid @greyBorder;
+  cursor: pointer;
+  display: none;
+}

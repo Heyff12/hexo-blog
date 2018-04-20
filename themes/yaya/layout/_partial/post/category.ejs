@@ -1,0 +1,11 @@
+<% if (post.categories && post.categories.length){ %>
+   类别：
+  <i>
+    <%- list_categories(post.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+    }) %>
+  </i>
+<% } %>

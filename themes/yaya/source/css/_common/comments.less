@@ -1,0 +1,145 @@
+@import "base.less";
+/*-----------详情页-评论------------------------*/
+
+.comments-title {
+  border-bottom: 2px solid @color;
+  width: 100%;
+  font-size: 18px;
+  line-height: 45px;
+  margin: 20px auto;
+}
+
+.comments-title span {
+  color: @color;
+}
+
+.comment-list {
+  width: 100%;
+}
+
+.comment-body {
+  position: relative;
+}
+
+.comment-list li {
+  width: 100%;
+  border-bottom: 1px solid #ecedee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.comment-list li .comment-meta {
+  width: 100%;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.comment-list li .comment-meta img {
+  width: auto;
+  max-width: 12%;
+  overflow: hidden;
+  height: 80px;
+  max-height: 80px;
+  float: left;
+}
+
+.comment-list li .comment-meta p.date {
+  width: 85%;
+  font-size: 14px;
+  float: right;
+  margin: 0px;
+}
+
+.comment-list li .comment-content {
+  width: 85%;
+  float: right;
+}
+
+.reply {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: @color;
+  color: white;
+  border-radius: 5px;
+}
+
+.reply a {
+  color: white;
+}
+
+.comment-list li ol.children {
+  border-top: 1px solid #ecedee;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.comment-list li ol.children li {
+  border: 0;
+  width: 85%;
+  margin: 0;
+  margin-left: 15%;
+  padding: 0;
+  border: 0;
+}
+
+.comment-list li ol.children li .comment-body {
+  position: relative;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.comment-respond {
+  position: relative;
+}
+
+.comment-respond p.comment-notes {
+  position: absolute;
+  top: 14px;
+  left: 100px;
+}
+
+.comment-respond p.logged-in-as {
+  position: absolute;
+  top: 14px;
+  left: 145px;
+}
+
+.comment-respond p label {
+  width: 80px;
+  display: inline-block;
+  font-weight: normal;
+}
+
+.comment-respond p input {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #d7d7d7;
+}
+
+.comment-respond p textarea {
+  border: 1px solid #d7d7d7;
+}
+
+.comment-respond p.form-submit .submit {
+  margin-left: 80px;
+  background: @color;
+  color: white;
+  border: 0;
+  height: 30px;
+  line-height: 30px;
+}
+
+.comment-reply-title {
+  border-bottom: 2px solid @color;
+  width: 100%;
+  font-size: 18px;
+  line-height: 45px;
+  margin: 20px auto;
+}
