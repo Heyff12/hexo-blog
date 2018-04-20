@@ -36,27 +36,27 @@
 </article> -->
 
 <dl class="title_word js_title_word">
-    <dt><%- partial('post/gallery') %></dt>
-    <dd class="dd_title">
-        <% if (post.link || post.title){ %>
-                <%- partial('post/title', {class_name: 'article-title'}) %>
-        <% } %></dd>
-    <dd class="dd_date grey"><%- partial('post/date', {class_name: 'article-date', date_format: null}) %> <span>阅读：<i>1212</i></span> <span><%- partial('post/category') %></dd>
-    <dd class="dd_detail">
-        <% if (post.excerpt && index){ %>
-            <%- post.excerpt %>
-                <% if (theme.excerpt_link){ %>
-                    <p class="article-more-link">
-                        <a href="<%- url_for(post.path) %>#more">
-                            <%= theme.excerpt_link %>
-                        </a>
-                    </p>
-                    <% } %>
-                        <% } else { %>
-                            <%- post.content %>
-                                <% } %>
-    </dd>
-    <div class="clearfix"></div>
+  <dt><%- partial('post/gallery') %></dt>
+  <dd class="dd_title">
+      <% if (post.link || post.title){ %>
+              <%- partial('post/title', {class_name: 'article-title'}) %>
+      <% } %></dd>
+  <dd class="dd_date grey"><%- partial('post/date', {class_name: 'article-date', date_format: null}) %> <span>阅读：<i>1212</i></span> <span><%- partial('post/category') %></dd>
+  <dd class="dd_detail">
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+          <% if (theme.excerpt_link){ %>
+            <p class="article-more-link">
+                <a href="<%- url_for(post.path) %>#more">
+                    <%= theme.excerpt_link %>
+                </a>
+            </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+  </dd>
+  <div class="clearfix"></div>
 </dl>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>

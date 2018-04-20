@@ -1,7 +1,20 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  About:
+    title: 关于
+    url: /about
+    sontitle: About
+    target: false
+  Archives:
+    title: 文章
+    url: /archives
+    sontitle: Archives
+    target: false
+  Home: 
+    title: 首页
+    url: /
+    sontitle: Home
+    target: false
 rss: /atom.xml
 
 # Content
